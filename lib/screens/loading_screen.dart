@@ -31,7 +31,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     const sampleOpenWeatherMapURL = 'https://api.openweathermap.org/data/2.5/weather?lat=35&lon=-122&appid=e72ca729af228beabd5d20e3b7749713';
     var url = Uri.parse(sampleOpenWeatherMapURL);
     var res = await http.get(url);
-    print(res);
+    print(res.body);
   }
 
 
